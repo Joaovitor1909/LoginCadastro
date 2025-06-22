@@ -1,0 +1,108 @@
+:root{
+    /*cores*/
+    --cor-principal:#3a68b7;
+
+    /* tipografia */
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-principal);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form{
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 40rem;
+    background-image: linear-gradient(to right, rgba(0,0,0,.3) .5rem, white .5rem);
+}
+
+.form__fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 2rem;
+}
+
+.form__title{
+    padding-top: 2rem;
+    font-weight: 300;
+    color: var(--cor-principal);
+    font-size: 2.5em;
+}
+
+.form__label{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300
+}
+
+.form__input{
+    padding: .5em 0;
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: 2px solid transparent;
+    border-bottom-color: var(--cor-principal);
+    margin-bottom: .8rem;
+    color: black;
+    outline: 0;
+    transition: padding-left .06s;
+}
+
+.form__input:focus{
+    outline: 2px solid var(--cor-principal);
+    padding-left: .3rem ;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: .3em;
+    cursor: pointer;
+    padding: 1rem 1.4em;
+    letter-spacing: .1em;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn_primario{
+  background-color: var(--cor-principal);
+  color: white;
+}
+
+.btn_secundario{
+color: var(--cor-principal);
+}
+
+.form__action{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form__action__aside{
+    font-size: .90rem;
+    flex-grow: 1;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+}
+
+.form__action__link{
+    text-decoration: inherit;
+    color: inherit;
+}
